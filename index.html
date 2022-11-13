@@ -66,20 +66,24 @@ img
           <hr>
         </div>
         <div class="w3-container">
+          
+          <p><button onclick="showctrsave()" class="shrtbtn"><i class="fa fa-save w3-margin-right"></i>CTR + S (Save) [1]</button></p>
+        <p><button onclick="showaltp()"  class="shrtbtn"><i class="fa fa-print fa-fw w3-margin-right w3-large"></i>ALT + P (Print) [2]</button></p>
+        <p><button onclick="showaltn()" class="shrtbtn"><i class="fa fa-plus fa-fw w3-margin-right w3-large"></i>ALT + N (New) [3]</button></p>
+        <p><button onclick="showaltr()" class="shrtbtn"><i class="fa fa-arrow-left fa-fw w3-margin-right w3-large"></i>ALT + R (Previous) [4]</button></p>
+        <p><button onclick="showalte()"  class="shrtbtn"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-large"></i>ALT + E (Next) [5]</button></p>
+        <p><button onclick="showctraltc()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + C (Copy to clipboard) [6]</button></p>
+                <p><button onclick="showctraltv()" class="shrtbtn"><i class="fa fa-paste fa-fw w3-margin-right w3-large"></i>CTR + ALT + V (Paste from clipboard) [7]</button></p>
+                        <p><button onclick="showctraltd()" class="shrtbtn"><i class="fa fa-clone fa-fw w3-margin-right w3-large"></i>CTR + ALT + D (Copy document) [8]</button></p>
         
-        <p><button onclick="showctrsave()" class="shrtbtn"><i class="fa fa-save w3-margin-right"></i>CTR + S (Save)</button></p>
-        <p><button onclick="showaltp()"  class="shrtbtn"><i class="fa fa-print fa-fw w3-margin-right w3-large"></i>ALT + P (Print)</button></p>
-        <p><button onclick="showaltn()" class="shrtbtn"><i class="fa fa-plus fa-fw w3-margin-right w3-large"></i>ALT + N (New)</button></p>
-        <p><button onclick="showaltr()" class="shrtbtn"><i class="fa fa-arrow-left fa-fw w3-margin-right w3-large"></i>ALT + R (Previous)</button></p>
-        <p><button onclick="showalte()"  class="shrtbtn"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-large"></i>ALT + E (Next)</button></p>
-        <p><button onclick="showctraltc()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + C (Copy to clipboard)</button></p>
-                <p><button onclick="showctraltv()" class="shrtbtn"><i class="fa fa-paste fa-fw w3-margin-right w3-large"></i>CTR + ALT + V (Paste from clipboard)</button></p>
-                        <p><button onclick="showctraltd()" class="shrtbtn"><i class="fa fa-clone fa-fw w3-margin-right w3-large"></i>CTR + ALT + D (Copy document)</button></p>
+                <p><button onclick="showctraltg()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + G (copy to all) [9]</button></p>
+                        <p><button onclick="showctrr()" class="shrtbtn"><i class="fa fa-columns fa-fw  w3-large"></i>CTR + R (Proportionate) [10]</button></p>
+                                  <p><button onclick="showctre()" class="shrtbtn"><i class="fa fa-edit fa-fw  w3-large"></i>CTR + E (Editing Masters) [11]</button></p>
         
-                <p><button onclick="showctraltg()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + G (copy to all)</button></p>
-                        <p><button onclick="showctrr()" class="shrtbtn"><i class="fa fa-columns fa-fw  w3-large"></i>CTR + R (Proportionate)</button></p>
-                                  <p><button onclick="showctre()" class="shrtbtn"><i class="fa fa-edit fa-fw  w3-large"></i>CTR + E (Editing Masters)</button></p>
-        
+                                            <p><button onclick="showaltx()" class="shrtbtn"><i class="fa fa-download fa-fw  w3-large"></i>ALT + X (Export XML) [12]</button></p>
+          
+                                            <p><button onclick="showctraltb()" class="shrtbtn"><i class="fa fa-barcode fa-fw  w3-large"></i>CTR + ALT + B (Print Barcode) [13]</button></p>
+          
         
           <hr>
 
@@ -212,13 +216,24 @@ const imgelement=document.querySelector('.img');
 imgelement.src='https://s4.gifyu.com/images/ctrr.gif'
         }
     
-      function showctre() {
+      
+    
+    function showaltx() {
   
 const txtheader=document.querySelector('.w3-opacity'); 
-txtheader.textContent='CTR + E (Editing Masters)';
+txtheader.textContent='ALT + X (Export XML)';
   
 const imgelement=document.querySelector('.img');
-imgelement.src='https://s4.gifyu.com/images/ctre.gif'
+imgelement.src='https://s4.gifyu.com/images/altx114e9f5b096bbbbf.gif'
+        }
+    
+    function showctraltb() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + ALT + B (Print Barcode)';
+  
+const imgelement=document.querySelector('.img');
+imgelement.src='https://s4.gifyu.com/images/ctraltb.gif'
         }
     
     
