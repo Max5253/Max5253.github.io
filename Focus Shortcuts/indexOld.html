@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Focus X Shortcuts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+
+.shortkeys:hover {
+background:#e5e5e5;
+cursor:pointer;
+padding:5px;
+font-weight: bold;
+}
+
+img
+  {
+     width:100%;
+      Height:100%;
+  }
+
+.shrtbtn {
+  background-color: ##cfd1d0;
+  border: none;
+  color: #414141;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.shrtbtn:hover {
+  background-color: #009688;
+  color: white;
+}
+
+
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <div style="width:100%; Height:40px;"></div>
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h3>Shortcut List</h3>
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container">
+          
+          <p><button onclick="showctrsave()" class="shrtbtn"><i class="fa fa-save w3-margin-right"></i>CTR + S (Save) [1]</button></p>
+        <p><button onclick="showaltp()"  class="shrtbtn"><i class="fa fa-print fa-fw w3-margin-right w3-large"></i>ALT + P (Print) [2]</button></p>
+        <p><button onclick="showaltn()" class="shrtbtn"><i class="fa fa-plus fa-fw w3-margin-right w3-large"></i>ALT + N (New) [3]</button></p>
+        <p><button onclick="showaltr()" class="shrtbtn"><i class="fa fa-arrow-left fa-fw w3-margin-right w3-large"></i>ALT + R (Previous) [4]</button></p>
+        <p><button onclick="showalte()"  class="shrtbtn"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-large"></i>ALT + E (Next) [5]</button></p>
+        <p><button onclick="showctraltc()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + C (Copy to clipboard) [6]</button></p>
+                <p><button onclick="showctraltv()" class="shrtbtn"><i class="fa fa-paste fa-fw w3-margin-right w3-large"></i>CTR + ALT + V (Paste from clipboard) [7]</button></p>
+                        <p><button onclick="showctraltd()" class="shrtbtn"><i class="fa fa-clone fa-fw w3-margin-right w3-large"></i>CTR + ALT + D (Copy document) [8]</button></p>
+        
+                <p><button onclick="showctraltg()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + G (copy to all) [9]</button></p>
+                        <p><button onclick="showctrr()" class="shrtbtn"><i class="fa fa-columns fa-fw  w3-large"></i>CTR + R (Proportionate) [10]</button></p>
+                                  <p><button onclick="showctre()" class="shrtbtn"><i class="fa fa-edit fa-fw  w3-large"></i>CTR + E (Editing Masters) [11]</button></p>
+        
+                                            <p><button onclick="showaltx()" class="shrtbtn"><i class="fa fa-download fa-fw  w3-large"></i>ALT + X (Export XML) [12]</button></p>
+          
+                                            <p><button onclick="showctraltb()" class="shrtbtn"><i class="fa fa-barcode fa-fw  w3-large"></i>CTR + ALT + B (Print Barcode) [13]</button></p>
+          
+        
+          <hr>
+
+        </div>
+      </div>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-eye fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Preview</h2>
+        <div class="w3-container">
+
+<h5 class="w3-opacity"><b>Button Pressed</b></h5>
+
+          <div class="showctrsave"></div>
+       <img class='img' src="#" alt="#">
+          <hr>
+        </div>
+
+        
+        
+        
+      </div>
+
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+  
+  <script>
+    function showctrsave() {
+  
+const txtheader=document.querySelector('.w3-opacity').textContent='CTR + S (Save)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctrs.gif'
+ 
+}
+
+function showaltp() {
+  
+const txtheader=document.querySelector('.w3-opacity').textContent='ALT + P (Print)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/altp.gif'
+ 
+}
+https://s1.gifyu.com/images/altp.gif
+function showaltn() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='ALT + N (New)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/altn.gif'
+ 
+}
+
+function showaltr() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='ALT + R (Previous)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/altr.gif'
+ 
+}
+function showalte() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='ALT + E (Next)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/alte.gif'
+ 
+}    
+    
+    function showctraltc() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + ALT + C (Copy to clipboard)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctraltc.gif'
+ 
+}   
+    
+        function showctraltv() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + ALT + V (Paste from clipboard)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctraltv.gif'
+        }
+    
+          function showctraltd() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + ALT + D (Copy Document)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctraltd.gif'
+        }
+              
+    function showctraltg() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + ALT + G (Copy to all lines)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctraltg.gif'
+        }
+    
+    function showctrr() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + R (Proportionate)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctrr.gif'
+        }
+
+    
+    function showctre() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + E (Editing Master)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctre.gif'
+        }
+    
+      
+    
+    function showaltx() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='ALT + X (Export XML)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/altx.gif'
+        }
+    
+    function showctraltb() {
+  
+const txtheader=document.querySelector('.w3-opacity'); 
+txtheader.textContent='CTR + ALT + B (Print Barcode)';
+  
+const imgelement=document.querySelector('.img').src='Gifs/ctraltb.gif'
+        }
+    
+    
+
+  </script>
+  
+  
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Designed by Murtaza V1.0.1</p>
+  
+</footer>
+
+</body>
+</html>

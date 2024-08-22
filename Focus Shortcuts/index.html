@@ -1,128 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Focus X Shortcuts</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    <title>Focus X Shortcuts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #0d1b2a;
+            color: #e5e5e5;
+        }
 
-.shortkeys:hover {
-background:#e5e5e5;
-cursor:pointer;
-padding:5px;
-font-weight: bold;
-}
+        .w3-container {
+            padding: 8px;
+        }
 
-img
-  {
-     width:100%;
-      Height:100%;
-  }
+        /* Glass effect for containers */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(100px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
 
-.shrtbtn {
-  background-color: ##cfd1d0;
-  border: none;
-  color: #414141;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+        }
 
-.shrtbtn:hover {
-  background-color: #009688;
-  color: white;
-}
+        /* Buttons styling */
+        .shrtbtn {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin: 2px 0;
+            text-align: left;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
 
+        .shrtbtn i {
+            margin-right: 12px;
+        }
 
-</style>
+        .shrtbtn:hover {
+            background-color: #00b4d8;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.5);
+        }
+
+        /* Page styling */
+        .w3-content {
+            max-width: 1400px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .w3-opacity {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #778da9;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 600px) {
+            .glass-effect {
+                backdrop-filter: blur(5px);
+            }
+
+            .shrtbtn {
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
-<body class="w3-light-grey">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<body>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <div style="width:100%; Height:40px;"></div>
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h3>Shortcut List</h3>
-          </div>
-          <hr>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+                <div class="glass-effect">
+                    <div class="w3-display-container">
+<h3 style="background-color: transparent;">Shortcut List</h3>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <p><button onclick="showctrsave()" class="shrtbtn"><i class="fa fa-save"></i>CTR + S (Save) [1]</button></p>
+                        <p><button onclick="showaltp()" class="shrtbtn"><i class="fa fa-print"></i>ALT + P (Print) [2]</button></p>
+                        <p><button onclick="showaltn()" class="shrtbtn"><i class="fa fa-plus"></i>ALT + N (New) [3]</button></p>
+                        <p><button onclick="showaltr()" class="shrtbtn"><i class="fa fa-arrow-left"></i>ALT + R (Previous) [4]</button></p>
+                        <p><button onclick="showalte()" class="shrtbtn"><i class="fa fa-arrow-right"></i>ALT + E (Next) [5]</button></p>
+                        <p><button onclick="showctraltc()" class="shrtbtn"><i class="fa fa-copy"></i>CTR + ALT + C (Copy) [6]</button></p>
+                        <p><button onclick="showctraltv()" class="shrtbtn"><i class="fa fa-paste"></i>CTR + ALT + V (Paste) [7]</button></p>
+                        <p><button onclick="showctraltd()" class="shrtbtn"><i class="fa fa-clone"></i>CTR + ALT + D (Copy Document) [8]</button></p>
+                        <p><button onclick="showctraltg()" class="shrtbtn"><i class="fa fa-copy"></i>CTR + ALT + G (Copy to all) [9]</button></p>
+                        <p><button onclick="showctrr()" class="shrtbtn"><i class="fa fa-columns"></i>CTR + R (Proportionate) [10]</button></p>
+                        <p><button onclick="showctre()" class="shrtbtn"><i class="fa fa-edit"></i>CTR + E (Edit Master) [11]</button></p>
+                        <p><button onclick="showaltx()" class="shrtbtn"><i class="fa fa-download"></i>ALT + X (Export XML) [12]</button></p>
+                        <p><button onclick="showctraltb()" class="shrtbtn"><i class="fa fa-barcode"></i>CTR + ALT + B (Print Barcode) [13]</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+                <div class="glass-effect w3-margin-bottom">
+                    <div class="w3-container">
+                        <h2 style="background-color: transparent; color:#e0e1dd;" class="w3-text-grey w3-padding-16"><i class="fa fa-eye fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Preview</h2>
+                        <div class="w3-container">
+                            <h5 style="background-color: transparent;" class="w3-opacity"><b>Button Pressed</b></h5>
+                            <div class="showctrsave"></div>
+                            <img class="img" src="#" alt="#">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Grid -->
         </div>
-        <div class="w3-container">
-          
-          <p><button onclick="showctrsave()" class="shrtbtn"><i class="fa fa-save w3-margin-right"></i>CTR + S (Save) [1]</button></p>
-        <p><button onclick="showaltp()"  class="shrtbtn"><i class="fa fa-print fa-fw w3-margin-right w3-large"></i>ALT + P (Print) [2]</button></p>
-        <p><button onclick="showaltn()" class="shrtbtn"><i class="fa fa-plus fa-fw w3-margin-right w3-large"></i>ALT + N (New) [3]</button></p>
-        <p><button onclick="showaltr()" class="shrtbtn"><i class="fa fa-arrow-left fa-fw w3-margin-right w3-large"></i>ALT + R (Previous) [4]</button></p>
-        <p><button onclick="showalte()"  class="shrtbtn"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-large"></i>ALT + E (Next) [5]</button></p>
-        <p><button onclick="showctraltc()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + C (Copy to clipboard) [6]</button></p>
-                <p><button onclick="showctraltv()" class="shrtbtn"><i class="fa fa-paste fa-fw w3-margin-right w3-large"></i>CTR + ALT + V (Paste from clipboard) [7]</button></p>
-                        <p><button onclick="showctraltd()" class="shrtbtn"><i class="fa fa-clone fa-fw w3-margin-right w3-large"></i>CTR + ALT + D (Copy document) [8]</button></p>
-        
-                <p><button onclick="showctraltg()" class="shrtbtn"><i class="fa fa-copy fa-fw w3-margin-right w3-large"></i>CTR + ALT + G (copy to all) [9]</button></p>
-                        <p><button onclick="showctrr()" class="shrtbtn"><i class="fa fa-columns fa-fw  w3-large"></i>CTR + R (Proportionate) [10]</button></p>
-                                  <p><button onclick="showctre()" class="shrtbtn"><i class="fa fa-edit fa-fw  w3-large"></i>CTR + E (Editing Masters) [11]</button></p>
-        
-                                            <p><button onclick="showaltx()" class="shrtbtn"><i class="fa fa-download fa-fw  w3-large"></i>ALT + X (Export XML) [12]</button></p>
-          
-                                            <p><button onclick="showctraltb()" class="shrtbtn"><i class="fa fa-barcode fa-fw  w3-large"></i>CTR + ALT + B (Print Barcode) [13]</button></p>
-          
-        
-          <hr>
 
-        </div>
-      </div>
-
-    <!-- End Left Column -->
+        <!-- End Page Container -->
     </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-eye fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Preview</h2>
-        <div class="w3-container">
-
-<h5 class="w3-opacity"><b>Button Pressed</b></h5>
-
-          <div class="showctrsave"></div>
-       <img class='img' src="#" alt="#">
-          <hr>
-        </div>
-
-        
-        
-        
-      </div>
-
-      
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-
-  
   <script>
     function showctrsave() {
   
@@ -237,12 +271,11 @@ const imgelement=document.querySelector('.img').src='Gifs/ctraltb.gif'
     
 
   </script>
-  
-  
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Designed by Murtaza V1.0.1</p>
-  
-</footer>
+
+    <footer>
+        <p>Designed by Murtaza V1.0.1</p>
+    </footer>
 
 </body>
+
 </html>
